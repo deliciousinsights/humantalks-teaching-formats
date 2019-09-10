@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Présentiel, vidéo, conférence, article… quel format pour transmettre ? • Christophe Porteneuve @ Human Talks 2019</title>
+
+		<meta name="description" content="Il existe bien des façons de transmettre la connaissance, notamment la connaissance technique : cours traditionnel, formation professionnelle, screencast, atelier, présentation en conférence… Quel format pour quel objectifs ? Christophe en compare rapidement les forces et faiblesses, parle de leurs pertinences et liste quelques meilleures pratiques à garder à l’esprit.">
+		<meta name="author" content="Christophe Porteneuve">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme-basis">
+		<link rel="stylesheet" href="css/theme/pw15.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/prism.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+    if (window.location.search.match(/print-pdf/gi)) {
+      var link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.type = 'text/css'
+      link.href = 'css/print/pdf.css'
+      document.getElementsByTagName('head')[0].appendChild(link)
+    }
+		</script>
+	</head>
+
+	<body id="prioFix">
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section id="mainTitle">
+					<h1>
+            <span style="font-size: 60%">Présentiel, vidéo, conférence, article…</span>
+            <span>quel format pour transmettre ?</span>
+          </h1>
+					<p>
+						<small>Un p’tit talk de <a href="http://tddsworld.com/">Christophe Porteneuve</a> à <a href="https://www.meetup.com/fr-FR/HumanTalks-Paris/events/264551188/">HumanTalks Paris</a></small>
+					</p>
+				</section>
+
+				<section id="whoami">
+					<h2>whoami</h2>
+
+					<pre><code data-trim class="language-js">
+const christophe = {
+  family: { wife: 'Élodie', sons: ['Maxence', 'Elliott'] },
+  city: 'Paris, FR',
+  company: 'Delicious Insights',
+  trainings: ['Web Apps Modernes', 'Node.js', 'Git Total', 'ES Total', 'Webpack'],
+  webDevSince: 1995,
+  claimsToFame: [
+    'Prototype.js',
+    'Ruby On Rails',
+    'Prototype and Script.aculo.us',
+    'Paris Web',
+    'NodeSchool Paris',
+    'dotJS',
+  ],
+}
+          </code></pre>
+        </section>
+
+        <section id="intro">
+          <h2>Mais encore…?</h2>
+          <p>Transmettre la connaissance, c’est bon.</p>
+          <p>C’est le kif.</p>
+          <p>Mais comment transmettre au mieux ?</p>
+          <p>Selon le sujet, les contraintes, les objectifs, les moyens…<br/>un format sera plus adapté que d’autres.</p>
+        </section>
+
+        <section>
+          <section id="questions">
+            <h1>Pose-toi la question…</h1>
+          </section>
+
+          <section id="question-what">
+            <h2>Quoi ?</h2>
+            <h4>Quel type de connaissance transmets-tu ?</h4>
+            <ul>
+              <li>Une compétence <strong>technique</strong> ?</li>
+              <li>Une compétence organisationnelle ?</li>
+              <li>Une astuce de vie <em>(life hack) ?</em></li>
+              <li>Une compétence humaine ?</li>
+              <li>De la <strong>connaissance générale</strong> / théorique ?</li>
+              <li>Sujet <strong>fluide</strong> ou stable ?</li>
+            </ul>
+          </section>
+
+          <section id="question-whom">
+            <h2>À qui ?</h2>
+            <h4>Quel public vises-tu ?</h4>
+            <ul>
+              <li>Pros (B2B) ou grand public (B2C) ?</li>
+              <li>Débutants ou confirmés ?</li>
+              <li>Et les « étudiants » ? <small>(dont bootcamps, etc.)</small></li>
+            </ul>
+          </section>
+
+          <section id="question-how">
+            <h2>Comment ?</h2>
+            <h4>Quelles modalités et supports ?</h4>
+            <ul>
+<li>En face à face ou magistral ?</li>
+<li>Présentiel ou à distance ?</li>
+<li>Unique ou personnalisé ?</li>
+<li>Parts de visuel et d’écrit ?</li>
+<li>Parts de déroulé et d’interactif ? <small>(exos/projets, quizzes)</small></li>
+<li>Passif ou actif ? <small>(corrigés / évaluations à la main, etc.)</small></li>
+            </ul>
+          </section>
+
+          <section id="question-when">
+            <h2>Quand ?</h2>
+            <ul>
+              <li>Longue durée, drip ou one-shot ?</li>
+              <li>Quelques minutes ou plusieurs heures ?</li>
+              <li><strong>Synchrone ou asynchrone ?</strong></li>
+              <li>Le soir ou en journée ? La semaine ou le week-end ?</li>
+            </ul>
+          </section>
+
+          <section id="question-how-much">
+            <h2>Combien ?</h2>
+
+            <ul>
+              <li>Gratuit ou payant ?</li>
+              <li>One-shot ou abonnement ?</li>
+              <li>Finançable ou de leur poche ?</li>
+            </ul>
+          </section>
+        </section> <!-- #questions -->
+
+        <section>
+          <section id="formats">
+            <h1>Les formats</h1>
+          </section>
+
+          <section id="format-course">
+            <h2>Cours traditionnels</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Donne les bons réflexes en amont</li>
+                  <li>Avance doucement (30h/trimestre &times; 1–3)</li>
+                  <li>Permet de facilement « corriger le tir »</li>
+                  <li>Forte interactivité + exos/projets évalués</li>
+                  <li>Peut déboucher sur une certification</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Horaires fixes</li>
+                  <li>Gros travail de préparation</li>
+                  <li>Peu compatible avec une vie pro</li>
+                  <li>Rarement lucratif pour l'intervenant·e</li>
+                  <li>Nécessite une structure d’accueil établie</li>
+                  <li>Forme peu de monde (max. 200/an)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : <strong>pour la gloire</strong></p>
+          </section>
+
+          <section id="format-training">
+            <h2>Formations présentielles</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Sujets moyens/gros (≈ 7–28h)</li>
+                  <li>Forte interactivité et exos/projets évalués</li>
+                  <li>Parfaitement adaptée aux professionnels</li>
+                  <li>Lucratif (même si bon marché)</li>
+                  <li>Ne nécessite pas une structure fixe établie</li>
+                  <li>Permet de découvrir plein de cas d’usage</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Horaires fixes</li>
+                  <li>Gros travail de préparation</li>
+                  <li>Nécessairement rapide, il faut digérer</li>
+                  <li>Pas facile de corriger le tir en route</li>
+                  <li>Aucune certification d'État en sortie</li>
+                  <li>Forme peu de monde (max. 500/an)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : Idéal pour des sujets pointus et un <strong>public pro payant</strong> <small>(Plan de Développement des Compétences, indés, etc.)</small></p>
+          </section>
+
+          <section id="format-webinar">
+            <h2>Webinars</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Adapté à tous les publics (numériques…)</li>
+                  <li>Lucratif <strong>à terme</strong> (même si bon marché)</li>
+                  <li>Pas de structure nécessaire : délocalisé !</li>
+                  <li>Peut former pas mal de monde</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Horaires fixes</li>
+                  <li>Gros travail de préparation</li>
+                  <li>Nécessairement rapide, il faut digérer</li>
+                  <li>Difficile de corriger le tir en route</li>
+                  <li>Sujets forcément ciblés (2–16h)</li>
+                  <li>Interactivité limitée</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : un peu le cul entre deux chaises : <strong>moins cher</strong> qu'une<br/>formation… mais nettement <strong>moins gratifiant</strong> pour tout le monde.</p>
+          </section>
+
+          <section id="format-screencast">
+            <h2>Screencasts</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Travail raisonnable de préparation</li>
+                  <li>Adapté à tous les publics</li>
+                  <li>Faibles coûts de prod/diffusion/vente</li>
+                  <li><strong>Revenu passif</strong></li>
+                  <li>Revisionnable comme on veut</li>
+                  <li>Peut viser des sujets variés (15'–8h)</li>
+                  <li>Peut former énormément de monde</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Pas de correction de tir possible à la volée</li>
+                  <li>Interactivité technique OK (quiz / exo), mais pas relationnelle (Q&R, déblocage…)</li>
+                  <li>Aucune certification d'État en sortie</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : excellent rapport qualité/prix… mais pas d’interaction humaine</p>
+          </section>
+
+          <section id="format-conference-talk">
+            <h2>Talks en conférence</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Travail raisonnable de préparation</li>
+                  <li>Revisionnable comme on veut (si vidéo)</li>
+                  <li>Adapté à des sujets très ciblés (5–50')</li>
+                  <li>Peut atteindre <strong>énormément</strong> de monde</li>
+
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Magistral : aucune interactivité hors Q&R</li>
+                  <li>On transmet mais <strong>on ne forme pas</strong>, en vrai : on suscite l’intérêt / débloque / éclaire</li>
+
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>diffusion</strong></p>
+          </section>
+
+          <section id="format-meetup-talk">
+            <h2>Talks en meetup</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Faible travail de préparation ;-)</li>
+                  <li>Revisionnable comme on veut (vidéo)</li>
+                  <li>Adapté à des sujets très ciblés (5–50')</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Faible public (10-200 + max. 3 000)</li>
+                  <li>Plutôt magistral, malgré la Q&R finale</li>
+                  <li>On transmet mais on ne forme pas, en vrai : on suscite l’intérêt / débloque / éclaire</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>proximité</strong></p>
+          </section>
+
+          <section id="format-conference-workshop">
+            <h2>Ateliers en conférence</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Travail raisonnable de préparation</li>
+                  <li>Adapté à des sujets très ciblés (1–4h)</li>
+                  <li>Avec des assistant·e·s, peut permettre une grosse interactivité</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Nécessairement rapide, il faut digérer</li>
+                  <li>Pas facile de corriger le tir en route</li>
+                  <li>Forme très peu de monde (10–100)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>proximité</strong></p>
+          </section>
+
+          <section id="format-meetup-workshop">
+            <h2>Ateliers en meetup</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Très peu de préparation</li>
+                  <li>Adapté à des sujets très ciblés (1–8h)</li>
+                  <li>Accessible à tou·te·s !</li>
+                  <li>Avec des assistant·e·s, peut permettre une grosse interactivité</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>À peu près rien si récurrent :-)</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>proximité</strong></p>
+          </section>
+
+          <section id="format-youtube">
+            <h2>Chaînes YouTube</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Revisionnable comme on veut</li>
+                  <li>Adapté à des sujets très ciblés (5–50')</li>
+                  <li>Peut atteindre énormément de monde</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Énorme travail de préparation</li>
+                  <li>Magistral : aucune interactivité</li>
+                  <li>Financement difficile</li>
+                  <li>Très concurrentiel dans pas mal de domaines</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>diffusion</strong></p>
+          </section>
+
+          <section id="format-twitch">
+            <h2>Livestreams Twitch</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Très tendance (rameutage encore facile)</li>
+                  <li>Déconstruit les mythes toxiques des rockstars / ninjas</li>
+                  <li>Énorme valeur ajoutée à diffuser de bons process de débogage, tests, etc.</li>
+                  <li>Interactivité sympa via le chat, etc.</li>
+                  <li>Revisionnable comme on veut</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Exercice difficile : ternir son image, mal gérer les attentes…</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la <strong>visibilité</strong> et le <strong>fun</strong>, mais à <strong>double-tranchant</strong>.</p>
+          </section>
+
+          <section id="format-book">
+            <h2>Livres</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Plus grand chose, en vrai…  Les crédibilité, renommée, image associées sont en perte de vitesse.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Énorme travail, souvent vite périmé</li>
+                  <li>Atteint peu de monde (max 10 000)</li>
+                  <li>Magistral, aucune interactivité</li>
+                  <li>On se retrouve avec les erreurs à vie, ou au moins jusqu’à la prochaine édition</li>
+                  <li>Peu lucratif</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la gloire, mais en perte totale de pertinence.</p>
+          </section>
+
+          <section id="format-article">
+            <h2>Articles</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Travail raisonnable de préparation</li>
+                  <li>Revisionnable comme on veut</li>
+                  <li>Adapté à des sujets très ciblés (5–50')</li>
+                  <li>Peut atteindre énormément de monde</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Magistral : aucune interactivité</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la <strong>visibilité</strong> + la <strong>diffusion</strong>.<br/>
+              <small>Le talk de conf mais avec plus d’épaisseur…</small></p>
+          </section>
+
+          <section id="format-email-course">
+            <h2>Cours par e-mail</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Travail raisonnable de préparation</li>
+                  <li>Correction de tir en route facile</li>
+                  <li>Construit la fidélité / l'anticipation</li>
+                  <li>Adapté à tous les publics</li>
+                  <li>Excellent “lead magnet” et “pre-sale”</li>
+                  <li>Peut atteindre énormément de monde</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Plutôt magistral</li>
+                  <li>Difficultés éventuelles de délivrabilité</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : plus un <strong>lead magnet</strong> qu’une vraie source de revenu</p>
+          </section>
+
+          <section id="format-answers">
+            <h2>Réponses sur forums</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>(Généralement) rapide et facile</li>
+                  <li>Quand on veut, autant qu’on veut</li>
+                  <li>Construit une notoriété</li>
+                  <li>Résout concrètement les problèmes / blocages des gens 💖</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>Rien, en soi.  Attention à ne pas se sentir obligé·e de répondre à tout sous prétexte qu’on sait, pour finir par faire un burn-out ou à tout le moins une crise de culpabilité : vous ne devez rien à personne !</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la gloire (mais <strong>très gratifiant</strong>)</p>
+          </section>
+
+          <section id="format-tweets">
+            <h2>Tweets</h2>
+
+            <div class="pros-and-cons">
+              <div>
+                <h4>Pour</h4>
+                <ul>
+                  <li>Rapide et facile</li>
+                  <li>Quand on veut, autant qu’on veut</li>
+                  <li>Construit <strong>parfois</strong> une notoriété <small>(arbre, forêt, toussa…)</small></li>
+                  <li>Peut aider concrètement des gens 💖</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Contre</h4>
+                <ul>
+                  <li>La visibilité reste délicate à définir…</li>
+                  <li>Très limité comme format, autant pour diffuser une info que pour répondre à une demande</li>
+                </ul>
+              </div>
+            </div>
+            <p>Verdict : pour la <strong>visibilité</strong></p>
+          </section>
+        </section> <!-- #formats -->
+
+        <section id="choosing">
+          <h2>Que choisir alors ?</h2>
+          <p>FIXME</p>
+
+          <!--
+
+Tout dépend ! Je peux vous dire ce que j’ai fait / on fait chez DI :
+
+- Formation présentielle (moi depuis 1996, DI depuis 2011)
+- Articles (depuis toujours)
+- Talks & ateliers (depuis 1997, en confs et meetups)
+- Screencasts (depuis 2016 un peu, 2019 vraiment)
+  (code promo sur les screencasts, 20 par cours au total, 7j, -50%)
+
+Je ne fais plus de réponses sur forums (plus le temps, mais ça m’a beaucoup aidé en 2005) et les tweets tech ne sont pas une stratégie dédiée.
+
+Un chemin classique et efficace : articles -> talks/ateliers -> screencasts -> formation.
+
+
+           -->
+        </section>
+
+        <section id="thank-you">
+          <h1>Merci !</h1>
+          <h3>Et transmettez avec passion.</h3>
+          <br>
+          <p>Christophe Porteneuve</p>
+          <p><a href="https://twitter.com/porteneuve">@porteneuve</a></p>
+
+          <p class="breathing">
+            Les slides sont sur <a href="http://bit.ly/formats-edu">bit.ly/formats-edu</a><br/>
+          </p>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+    <script src="plugin/highlight/prism.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+      // Full list of configuration options available here: // https://github.com/hakimel/reveal.js#configuration
+      /* global Reveal */
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        width: '95%',
+        height: '90%',
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function () { return !document.body.classList } },
+          { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]') } },
+          { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]') } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList } }
+        ]
+      })
+		</script>
+
+	</body>
+</html>
