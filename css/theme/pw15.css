@@ -406,3 +406,7 @@ b.hl {
 .pros-and-cons > div li:nth-child(2n) {
   color: rgb(8, 129, 199);
 }
+
+.reveal section > p {
+  font-size: 90%;
+}
